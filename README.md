@@ -1,5 +1,5 @@
 #PHP Syntax
-a short brief about php syntax
+A short brief about php syntax
 
 ##Table of contents
   - PHP full form
@@ -8,3 +8,8 @@ a short brief about php syntax
   - PHP build in fucntion echo
   - PHP case-sensitivity 
 
+#PHP Commenting
+A short brief about PHP commenting
+
+##Table of contents
+  - Single line & multi-line comments.
