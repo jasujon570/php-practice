@@ -305,6 +305,9 @@
         echo "Only one is true \n";
     }
 
+
+    //precedence of operators
+
     $a = true;
     $b = false;
     $c = true;
