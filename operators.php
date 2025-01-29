@@ -332,15 +332,24 @@
         echo "Plese log in. \n";
     }
 
-    $age = 13;
+    $age = 19;
     $teenAger = true;
 
     if ($age <= 20 && $teenAger) {
-        echo "He is an teenager.\n";
+        echo "This person is a teenager\n";
     } else {
-        echo "He is an Adult.\n";
+        echo "This person is not a teenager.\n";
     }
 
+    echo "\n";
+    echo "\n";
+    echo "\n";
+
+    if ($age >= 14 && $age <= 19) {
+        echo "This person is a teenager";
+    }else {
+        echo "This person is not a teenager";
+    }
 
 
     echo "\n";
