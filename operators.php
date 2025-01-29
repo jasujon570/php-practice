@@ -528,9 +528,7 @@
     echo "\n";
 
     $aNumber = 13;
-    $numberResult = (12 == $aNumber) ? "Twelve": 
-    ((13 == $aNumber) ? "Thirteen" : 
-    ((15 == $aNumber) ? "Fifteen" : "A Number"));
+    $numberResult = (12 == $aNumber) ? "Twelve": ((13 == $aNumber) ? "Thirteen" : ((15 == $aNumber) ? "Fifteen" : "A Number"));
     echo $numberResult;
 
 

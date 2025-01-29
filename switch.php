@@ -92,7 +92,7 @@
                     echo "$n is a positive odd number\n";
                     break;
                case $n<0: 
-                    echo "$n is a negatice odd number\n";
+                    echo "$n is a negative odd number\n";
                     break;         
             }        
 
@@ -177,15 +177,50 @@
             break;                                     
     }
 
+    echo "\n";
+    echo "\n";
 
 
 
+    $n = 15;
+    $r = $n % 2;
+    
+    if ($r == 0) {
+        // Even number
+        if ($n > 0) {
+            echo "$n is a positive even number\n";
+        } else if ($n < 0) {
+            echo "$n is a negative even number\n";
+        }
+    } else {
+        // Odd number
+        if ($n > 0) {
+            echo "$n is a positive odd number\n";
+        } else if ($n < 0) {
+            echo "$n is a negative odd number\n"; // Fixed typo
+        }
+    }
 
 
 
+    echo "\n";
+    echo "\n";
 
 
+    $string = "9balls";
+    switch ($string) {
+        case (string) "8balls":
+            echo "Eight balls";
+            break;
+        case (string) 9:
+            echo "9";    
+            break;
+        case (string) "9balls":
+            echo "Nine balls";
+            break;    
+    }
 
+    
 
 
 
