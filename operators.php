@@ -279,6 +279,37 @@
     echo "\n";
     echo "\n";
 
+
+    $foods = "Apple";
+
+    if ("Tuna" == $foods) {
+        echo "This is a fruit.";
+    }else {
+        echo "We dont know about it.";
+    }
+
+    echo "\n";
+    echo "\n";
+    echo "\n";
+
+    
+    $food = "salmon";
+
+    if ("tuna" == $food || "salmon" == $food) {
+        echo "{$food} has contain vitamin D";
+    }elseif("Apple" == $food) {
+        echo "{$food} doesn't has vitamin D";
+    }else {
+        echo "We don't know if {$food} has vitamin D";
+    }
+
+
+
+    echo "\n";
+    echo "\n";
+    echo "\n";
+
+
     $a = true;
     $b = false;
 
@@ -304,6 +335,66 @@
     if ($st xor $yt) {
         echo "Only one is true \n";
     }
+
+    echo "\n";
+    echo "\n";
+    echo "\n";
+
+    // leap year calculation
+
+
+    $year = 2000;
+
+    if ($year % 4 ==0 && $year % 100 ==0 && $year % 400 ==0){
+        echo "{$year} is a leap year";
+    }elseif($year % 4 ==0 && $year % 100 ==0){
+        echo "{$year} is not a leap year";
+    }elseif($year % 4 ==0){
+        echo "{$year} is a leap year";
+    }else{
+        echo "{$year} is not a leap year";
+    }
+
+    echo "\n";
+    
+
+
+    if($year % 4 ==0 && ($year % 100 !=0 || $year % 400 ==0)){
+        echo "{$year} is a leap year";
+    }else {
+        echo "{$year} is not a leap year";
+    }
+
+    echo "\n";
+
+
+
+
+    $year = 2000;
+
+
+    if ($year % 400 ==0 && $year % 100 ==0 && $year % 4 ==0){
+        echo "{$year} is a leap year";
+    }elseif ($year % 4 ==0 && $year % 100 ==0){
+        echo "{$year} is not a leap year";
+    }elseif ($year % 4 ==0){
+        echo "{$year} is a leap year";
+    }else{
+        echo "{$year} is not a leap year";
+    }
+
+
+    echo "\n";
+
+    if ($year % 400 ==0 && ($year % 100 !=0 || $year % 4 ==0)){
+        echo "{$year} is a leap year";
+    }else {
+        echo "{$year} is not a leap year";
+    }
+
+    echo "\n";
+    echo "\n";
+
 
 
     //precedence of operators
@@ -430,6 +521,9 @@
 
      $username = $_GET['user'] ?? 'Guest';
      echo "$username";
+
+
+
 
 
 
