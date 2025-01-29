@@ -513,6 +513,32 @@
     echo "\n";
     echo "\n";
 
+    $cal = 11;
+    $calResult = ($cal % 2 ==0) ? 'Even number' : 'Odd Number';
+    echo $calResult;
+
+    echo "\n";
+ 
+
+    if ($cal % 2 ==0){
+        echo "Even Number";
+    }else {
+        echo "Odd Number";
+    }
+    echo "\n";
+
+    $aNumber = 13;
+    $numberResult = (12 == $aNumber) ? "Twelve": 
+    ((13 == $aNumber) ? "Thirteen" : 
+    ((15 == $aNumber) ? "Fifteen" : "A Number"));
+    echo $numberResult;
+
+
+
+
+    echo "\n";
+    echo "\n";
+
     //Null Coalescing Operator (??)
      echo "The null coalescing operator checks if a variable is set and not null. If it is set, it returns the value; otherwise, it returns the fallback value.";
 
