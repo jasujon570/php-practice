@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form target="_blank" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Personalia:</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name" style="width: 150px; height: 10px;"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" style="width: 150px; height: 10px;">
+                <input type="submit" value="Submit">  
+        </fieldset>    
+        <br>
+        <br>
+        ------------------
+        <p>Choose your favorite web language</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="Javascript">
+        <label for="javascript">Javascript</label><br>
+        <input type="radio" id="php" name="fav_language" value="PHP">
+        <label for="php">PHP</label>
+
+        <br>
+        <br>
+
+        ------------------
+
+        <p>HTML Checkboxs</p>
+
+        <input type="checkbox" id="book" name="book" value="Chemestry">
+        <label for="book">Chemestry</label><br>
+        <input type="checkbox" id="book2" name="book2" value="Physics">
+        <label for="book2">Physics</label><br>
+        <input type="checkbox" id="book3" name="book3" value="Biology">
+        <label for="book3">Biology</label><br>
+        <button onclick="alert('Hello World!')">Click Me!</button>
+        <br>
+        <br>
+
+        ------------------
+        <br>
+        <br>
+
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="2" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="toyota">Toyota</option>
+            <option value="audi" selected>Audi</option>
+            <option value="rangerover">Range Rover</option>
+            <input type="submit" value="Submit">
+        </select>
+        <textarea name="htmlform" style="width: 75px; height: 75px;">
+            I am learning html form.
+
+        </textarea>
+    
+        <br>
+        <br>
+
+        ------------------
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Login Form:</legend>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" name="password" id="password" required><br><br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+            <input type="reset" name="reset" id="reset" value="Reset">
+        </fieldset>
+
+        <br>
+        <br>
+
+        ------------------
+        <br>
+        <br>
+
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <br>
+        <br>
+
+        ------------------
+        <br>
+        <br>
+
+
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1997-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-02</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+
+        <!-- Input Type Datetime-local -->
+
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
