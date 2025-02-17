@@ -13,7 +13,7 @@ function countVowels($str){
     // Loop through each character and check if it's a vowel
 
     for($i=0; $i < strlen($str); $i++){
-        if(in_array($str[i], $vowels)){
+        if(in_array($str[$i], $vowels)){
             $count++;
         }
     }
@@ -21,7 +21,7 @@ function countVowels($str){
 
 }
 
-echo countVowels("Hello World!");
+echo countVowels("Welcome! I love php to learn and sharing my knowdlege");
 
 
 
