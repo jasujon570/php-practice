@@ -37,7 +37,7 @@
 
     // 5. What will this loop output?
 
-    for ($i = 0; $i < 3; $i++); {
+    for ($i = 0; $i < 3; $i++); { //There's a semicolon after for ($i = 0; $i < 3; $i++);, which makes the loop do nothing.
         echo $i; //012
     }
     echo PHP_EOL;
@@ -54,6 +54,13 @@
     test();
     test();
 
+    // 7. What will be printed?
+
+    function checkNumber($num) {
+        return ($num % 2 == 0) ? "Even" : "Odd";
+    }
+    
+    echo checkNumber(7);
 
 
 ?>
