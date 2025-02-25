@@ -288,15 +288,73 @@
     $nums = [1, 2, 3, 4];
     $evenCount = 0;
 
-    foreach ($num as $item) {
-        if ($item % 2 == 0) {
+    foreach ($nums as $item) {
+        if ($item % 2 === 0) {
             $evenCount++;
         }
     }
 
+    echo $evenCount; // Expected output: 2;
 
 
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Reverse the Array
+
+    function reverseArray($arr) {
+        $reversed = []; // Create a new array to store the reversed elements
+        $length = count($arr);
+
+        // Loop through the array from the end to the beginning
+
+        for ($i = $length - 1; $i >= 0; $i--) {
+            $reversed[] = $arr[$i];
+        }
+
+        return $reversed;
+
+        
+    }
+    $nums = [1, 2, 3, 4];
+    $reverseArray = reverseArray($nums);
+
+    print_r($reverseArray); // Expected output: [4, 3, 2, 1]
 
     
-    
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    function secondLargest($arr) {
+        // Sort the array in descending order
+        rsort($arr);
+
+        // Return the second element
+        return $arr[1];
+    }
+
+    // Example usage
+
+    $num = [1, 2, 3, 4];
+    echo secondLargest($num); // Expected output: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
