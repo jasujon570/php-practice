@@ -325,6 +325,11 @@
     echo PHP_EOL;    
     echo PHP_EOL;
 
+
+
+// Find the Second Largest Number
+
+
     function secondLargest($arr) {
         // Sort the array in descending order
         rsort($arr);
@@ -338,7 +343,66 @@
     $num = [1, 2, 3, 4];
     echo secondLargest($num); // Expected output: 3
 
+    echo PHP_EOL;    
+    echo PHP_EOL;
 
+    // Remove Duplicates
+    
+    function removeDuplicates($arr) {
+        return array_unique($arr);
+    }
+
+    // Examples usage
+
+    $nums = [1, 2, 2, 3, 4, 4];
+    $uniqueArray = removeDuplicates($nums);
+    print_r($uniqueArray);
+
+
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    function sumOfOddNumbers($arr) {
+        $sum = 0; //Initialize the sum to 0
+
+
+        foreach ($arr as $num) {
+            // Check if the number is odd
+            if ($num % 2 != 0) {
+                $sum += $num; // Add the number to the sum
+            }
+        }
+
+        return $sum;
+
+
+    }
+
+    $nums = [1, 2, 3, 4, 5];
+    echo sumOfOddNumbers($nums);
+
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+
+    function filterNumbersGreaterThanThree($arr) {
+        $filteredArray = []; // Initialize an empty array to store the filtered numbers
+
+
+        foreach ($arr as $num) {
+            // Check if the number is greater than 3
+            if ($num > 3) {
+                $filteredArray[] = $num; // Add the number to the filtered array
+            }
+        }
+        return $filteredArray;
+    }
+
+    $nums = [1,2,3,4,5,6];
+    $filteredArray = filterNumbersGreaterThanThree($nums);
+    print_r($filteredArray);
 
 
 
