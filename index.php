@@ -188,15 +188,74 @@
     echo $num;
 
 
+    echo PHP_EOL;
 
 
 
+    // 1. What will be the output?
 
 
+    function mystery($x, $y) {
+        return $x() + $y;
+    }
+    echo mystery(fn() => 5, 10);
+
+    echo PHP_EOL;
+
+    // 2. What will this code print?
+
+    $a = 5;
+    $b = &$a;
+    $b = 10;
+    unset($b);
+    echo $a;
+
+    echo PHP_EOL;
+
+    // 3. What will be the output?
+
+    $array1 = [1, 2, 3];
+    foreach ($array1 as &$value1) {}
+    gc_enable(); // Force garbage collection
+    foreach ($array1 as $value1) {}
+    echo $array1[0];
+
+    echo PHP_EOL;
+
+    // 4. What will be printed?
+
+    $x = "5";
+    $y = 5;
+
+    echo ($x <=> $y);
+
+    echo PHP_EOL;
+
+    // 5. What will this print?
+
+    $nums = [1, 2, 3, 4];
+    $num = array_reduce($nums, fn($carry, $item) => $carry + $item, 0);
+    echo $num;
 
 
+    echo PHP_EOL;    
+    echo PHP_EOL;
 
+    echo PHP_VERSION;
 
+    echo PHP_EOL;    
+    echo PHP_EOL; 
+    echo PHP_EOL;    
+    echo PHP_EOL; 
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    $array = ["a" => 1, "b" => 2, "c" => 3];
+
+foreach ($array as &$value) {} 
+foreach ($array as $value) {} 
+
+print_r($array);
 
 
 
