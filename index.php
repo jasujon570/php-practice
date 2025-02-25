@@ -252,12 +252,47 @@
 
     $array = ["a" => 1, "b" => 2, "c" => 3];
 
-foreach ($array as &$value) {} 
-foreach ($array as $value) {} 
+    foreach ($array as &$value) {} 
+    foreach ($array as $value) {} 
 
-print_r($array);
+    print_r($array);
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
 
 
+// Multiply All Numbers
+
+    $nums = [1, 2, 3, 4];
+    $product = 1;
+
+
+    foreach ($nums as $item) {
+        $product *= $item;
+    }
+
+    echo $product; // Expected output: 24
+
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    $nums = [1, 2, 3, 4];
+    $maxValue = max($nums);
+
+    echo $maxValue; // Expected output: 4
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    $nums = [1, 2, 3, 4];
+    $evenCount = 0;
+
+    foreach ($num as $item) {
+        if ($item % 2 == 0) {
+            $evenCount++;
+        }
+    }
 
 
 
