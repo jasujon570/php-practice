@@ -62,5 +62,27 @@
     
     echo checkNumber(7);
 
+    // 8. Predict the output
 
+    define ("MESSAGE", "Hello World!");
+    echo MESSAGE;
+    define("MESSAGE", "New Message");
+    echo MESSAGE; // Constant MESSAGE already defined 
+    
+    echo PHP_EOL;
+
+    // 9. What will be printed?
+    $arr = [1, 2, 3, "4"];
+    echo array_sum($arr);
+
+    echo PHP_EOL;
+
+    // 10. What is the output?
+
+    $colors = ["red", "green", "blue"];
+
+    foreach($colors as $color) {
+        if ($color == "green") continue;
+        echo $color;
+    }
 ?>
