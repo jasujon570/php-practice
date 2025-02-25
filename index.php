@@ -37,12 +37,22 @@
 
     // 5. What will this loop output?
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < 3; $i++); {
         echo $i; //012
     }
     echo PHP_EOL;
 
-    
+    // 6. What is the output?
+
+    function test(){
+        static $count = 0;
+        $count++;
+        echo $count;
+    }
+
+    test();
+    test();
+    test();
 
 
 
