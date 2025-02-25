@@ -85,4 +85,7 @@
         if ($color == "green") continue;
         echo $color;
     }
+
+
+    
 ?>
