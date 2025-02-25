@@ -86,6 +86,123 @@
         echo $color;
     }
 
+    echo PHP_EOL;   
 
+    // 1. What will be the output?
+
+    $var = 0;
+    $var = $var ?: "Hello";
+    echo $var; //Hello
+
+
+    echo PHP_EOL;
+
+    // 2. What will this function return?
+
+    function example(&$x) {
+        $x += 5;
+        return $x;
+    }
+
+    $val = 10;
+    echo example($val);
+    echo $val;
+
+    echo PHP_EOL;
+
+    // 3. Predict the output:
+
+    $array = ["a" => 1, "b" => 2, "c" => 3];
+
+    foreach($array as $key => &$value) {}
+    foreach($array as $key => $value) {}
+    echo $array["a"];
+
+    echo PHP_EOL;
+
+    // 4. What is the output?
+
+    $str1 = "Hello";
+    $str2 = "hello";
+    echo strcmp($str1, $str2);
+
+    
+    echo PHP_EOL;
+
+
+    // 5. What will be printed?
+
+    $x = "5";
+    $y = 5;
+
+    echo ($x == $y) ? "Equal" : "Not Equal";
+    echo ($x === $y) ? "Equal" : "Not Equal";
+
+    echo PHP_EOL;
+
+    // What will be the output?
+
+    $a1 = "10";
+    $b1 = 10;
+
+    echo ($a1 == $b1) ? "Same" : "Different";
+    echo ($a1 === $b1) ? "Same" : "Different";
+
+    echo PHP_EOL;
+
+    $num = 5;
+    function multiply() {
+        global $num;
+        $num *= 2;
+    }
+
+    multiply();
+    echo $num;
+
+    echo PHP_EOL;
+
+    $x = 5;
+    $y = &$x;
+    $y = 10;
+    $x = 20;
+
+    echo $y;
+
+
+    echo PHP_EOL;
+
+    for ($i = 1; $i <= 5; $i++) {
+        if ($i == 3) continue;
+        echo $i;
+    }
+
+    echo PHP_EOL;
+
+    function test1(&$var) {
+        $var += 2;
+        return $var;
+    }
+
+    $num = 3;
+    echo test1($num);
+    echo $num;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     
 ?>
