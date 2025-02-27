@@ -404,6 +404,9 @@
     $filteredArray = filterNumbersGreaterThanThree($nums);
     print_r($filteredArray);
 
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
     // Swap Two Variables Without a Temporary Variable
 
      function swap(&$a, &$b) {
@@ -419,6 +422,17 @@
 
 
      echo "$a, $b"; //Expected output: 10, 5
+
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+
+
+
+    //  Find the Factorial of a Number
+
+
 
 
 
