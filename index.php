@@ -479,11 +479,109 @@
     echo PHP_EOL;
 
 
+    // How do you display the current time in H:i:s format
+    // (hours:minutes:seconds)?
+
+    // "h": Represents the hour in 12-hour format (01 to 12).
+    // "A": Displays "AM" or "PM".
+
+    echo "Current time: " . date("H:i:s");
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Rewrite this if/else block using a ternary operator:
+
+    $age = 20;    
+    $status = ($age >= 18)? "Adult" : "Minor";
+    
+    echo $status;
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // How do you get the current script's filename using a $_SERVER variable?
+
+    echo "Current script: " . $_SERVER['PHP_SELF'];
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Write PHP code to check if a form field called email was submitted and is not empty.
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        if(isset($_POST["email"]) && !empty($_POST["email"])) {
+            echo "Email Submitted: " . htmlspecialchars($_POST["email"]);
+        } else {
+            echo "The email field is missing or empty.";
+        } 
+    } else {
+        echo "Form is not submitted.";
+    }
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Create a function called greet() that takes 1 parameter ($name), but if no name is passed, it should default to "Guest".
+
+   function greet($name = "Guest") {
+    echo "Hello, $name!";
+   }
 
 
+   greet("Sujon");
+   echo "\n";
+   greet();
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+//    Create a 2D array $products with 2 products, each having a name and price.
 
 
+   $products = [
+        [
+            "name" => "Laptop",
+            "price" => 999.99
+        ],
+        [
+            "name" => "smartphone",
+            "price" => 151.99
+        ]
+    ];
 
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // What is the output of this code?
+
+    $name = "John";
+
+    echo "Welcome " . $name . "!"; // Welcome John!
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Write a for loop that prints numbers from 1 to 20, but for multiples of 5, print "Buzz" instead of the number.
+
+
+    for ($i = 1; $i <=20; $i++) {
+        if ($i % 5 === 0){
+            echo "Buzz\n";
+        }else {
+            echo "$i\n";
+        }
+    }
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // using a ternary operator
+
+    for($x=1;$x<=20;$x++){
+        echo ($x % 5 === 0) ? "Buzz\n" : "$x\n";
+    }
 
 
 
