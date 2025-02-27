@@ -458,8 +458,7 @@
         echo $fruit . "\n";
     }
      
-//     Create an array called $colors with these values: "Red", "Green", "Blue".
-//     Now, add "Yellow" to the array using a PHP function.
+//     Create an array called $colors with these values: "Red", "Green", "Blue". Now, add "Yellow" to the array using a PHP function. 
 
     $colors = ["Red", "Green", "Blue"];
     array_push($colors, "Yellow");
@@ -467,9 +466,7 @@
     echo PHP_EOL;    
     echo PHP_EOL;
 
-    // Write a line of PHP code to convert this string to lowercase: 
-    // $title = "HELLO PHP WORLD";
-
+    // Write a line of PHP code to convert this string to lowercase: $title = "HELLO PHP WORLD";
     $title = "HELLO PHP WORLD";
     $title = strtolower($title);
 
@@ -479,8 +476,7 @@
     echo PHP_EOL;
 
 
-    // How do you display the current time in H:i:s format
-    // (hours:minutes:seconds)?
+    // How do you display the current time in H:i:s format (hours:minutes:seconds)?
 
     // "h": Represents the hour in 12-hour format (01 to 12).
     // "A": Displays "AM" or "PM".
@@ -583,6 +579,34 @@
         echo ($x % 5 === 0) ? "Buzz\n" : "$x\n";
     }
 
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Create two arrays: Combine them into an associative array using a PHP function.
+
+
+    // Define two indexed arrays: one for keys and one for values
+    $keys = ["name", "age", "city"];
+    $values = ["Sujon", 25, "Dhaka"];
+
+    
+    // Combine the arrays into an associative array
+    $associativeArray = array_combine($keys, $values);
+    
+    // Output the resulting associative array
+    print_r($associativeArray);
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Replace all occurrences of "PHP" with "Laravel" in this string:
+
+    $text = "I love PHP because PHP is awesome!";
+
+    $updateText = str_replace("PHP", "Laravel", $text);
+
+    echo $updateText;
 
 
 
