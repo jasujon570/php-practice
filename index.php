@@ -433,8 +433,50 @@
     //  Find the Factorial of a Number
 
 
+     $day = 1;
 
+     switch ($day) {
+        case 1:
+            echo "Monday";
+            break;
+        case 2:
+            echo "Tuesday";
+            break;
+        default:
+            echo "Other Day";
+            break;        
+     };
 
+     echo PHP_EOL;    
+     echo PHP_EOL;
+
+    // Write a foreach loop that prints each value of an indexed array ['apple', 'banana', 'cherry'].
+
+    $fruits = ['apple', 'banana', 'cherry'];
+
+    foreach($fruits as $fruit){
+        echo $fruit . "\n";
+    }
+     
+//     Create an array called $colors with these values: "Red", "Green", "Blue".
+//     Now, add "Yellow" to the array using a PHP function.
+
+    $colors = ["Red", "Green", "Blue"];
+    array_push($colors, "Yellow");
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Write a line of PHP code to convert this string to lowercase: 
+    // $title = "HELLO PHP WORLD";
+
+    $title = "HELLO PHP WORLD";
+    $title = strtolower($title);
+
+    print_r($title);
+
+    echo PHP_EOL;    
+    echo PHP_EOL;
 
 
 
