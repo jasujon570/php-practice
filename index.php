@@ -609,6 +609,187 @@
     echo $updateText;
 
 
+    echo PHP_EOL;    
+    echo PHP_EOL;
+
+    // Write PHP code to calculate how many days are left until next New Year's Day (January 1, 2026).
+
+   $targetDay = strtotime('2026-01-01');
+   $currentTimestamp = time();
+
+   $diffInSecond = $targetDay - $currentTimestamp;
+
+   $daysLeft = floor($diffInSecond / (60 * 60 * 24));
+
+   echo "There are $daysLeft days left until New Year's Day (January 1, 2026).";
+
+
+   echo PHP_EOL;    
+   echo PHP_EOL;
+
+//    Sort it in descending order using a PHP function.
+
+
+$numbers = [45, 2, 87, 32, 56];
+
+rsort($numbers);
+
+print_r($numbers);
+
+echo PHP_EOL;    
+echo PHP_EOL;
+
+// Check if the value "banana" exists in this array: Print "Found" if it exists, otherwise "Not Found"
+
+$fruits = ["apple", "orange", "grape"];
+
+if (in_array("banana", $fruits)) {
+    echo "Found";
+} else {
+    echo "Not Found";
+}
+
+echo PHP_EOL;    
+echo PHP_EOL;
+
+// Using ternary operator
+
+echo (in_array("banana", $fruits)) ? "Found" : "Not Found";
+
+echo PHP_EOL;    
+echo PHP_EOL;
+
+
+// Using foreach loops
+
+
+// Initialize a flag variable
+$found = false;
+
+foreach ($fruits as $fruit) {
+    if ($fruit === "apple") {
+        $found = true;
+        break;
+    }
+}
+
+echo $found ? "Found" : "Not Found";
+
+
+echo PHP_EOL;    
+echo PHP_EOL;
+
+// Write PHP code to include a file called config.php.
+// If the file is missing, display "Config file not found" without crashing the script.
+
+
+if(file_exists('config.php')){
+    include 'config.php';
+} else {
+    echo "Config file not found";
+}
+echo PHP_EOL;    
+echo PHP_EOL;
+
+// Create a function calculateArea() that takes two parameters ($length and $width) and returns the area (not echo).
+
+
+
+
+function calculateArea($length = 10, $width = 5){
+    $area = $length * $width;
+
+    return $area;
+}
+
+$result = calculateArea();
+
+echo "The area is: " . $result;
+
+
+echo PHP_EOL;    
+echo PHP_EOL;
+
+// Another method
+
+
+function calculateAreas($length = 50, $width = 25) {
+    $area = $length * $width;
+    if (!is_numeric($length) || !is_numeric($width)){
+        return "Invalid input";
+    }
+    if ($length < 0 || $width < 0) {
+        return "Length and Width must be non-negative";
+    }
+    return $area;
+}
+
+$result = calculateAreas();
+
+echo "The area is: " . $result;
+
+
+
+
+echo PHP_EOL;    
+echo PHP_EOL;
+
+
+// Write a for loop that prints numbers 1 to 10, but skips number 5 using continue
+
+for ($i = 1; $i <= 10; $i++){
+    if ($i === 5) {
+        continue;
+    }
+
+    echo $i . "\n";
+}
+
+echo PHP_EOL;
+echo PHP_EOL;
+
+
+// What will this print?
+
+
+echo $_SERVER['REQUEST_URI']; // Undefined array key "REQUEST_URI"
+
+
+echo PHP_EOL;
+echo PHP_EOL;
+
+
+$person = [
+    "name" => "Sujon",
+    "age" => 25,
+    "city" => "Dhaka"
+];
+
+foreach ($person as $key => $value) {
+    echo "$key: $value\n";
+}
+
+
+
+
+
+echo PHP_EOL;
+echo PHP_EOL;
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
 
 
 
