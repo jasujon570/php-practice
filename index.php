@@ -404,6 +404,57 @@
     $filteredArray = filterNumbersGreaterThanThree($nums);
     print_r($filteredArray);
 
+    // Swap Two Variables Without a Temporary Variable
+
+     function swap(&$a, &$b) {
+        $a = $a + $b;
+        $b = $a - $b;
+        $a = $a - $b;
+     }
+     
+     $a = 5;
+     $b = 10;
+
+     swap($a, $b);
+
+
+     echo "$a, $b"; //Expected output: 10, 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
