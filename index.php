@@ -583,6 +583,8 @@
     echo PHP_EOL;    
     echo PHP_EOL;
 
+
+
     // Create two arrays: Combine them into an associative array using a PHP function.
 
 
@@ -768,9 +770,6 @@ $person = [
 foreach ($person as $key => $value) {
     echo "$key: $value\n";
 }
-
-
-
 
 
 echo PHP_EOL;
