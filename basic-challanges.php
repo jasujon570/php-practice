@@ -17,7 +17,6 @@
 
 <?php
 
-/**
 
 function sum($num1, $num2){
     $sum = $num1 + $num2;
@@ -122,9 +121,6 @@ echo "\n";
         "Course" => "PHP Basics"
     ];
 
-?>
-
-**/
 
  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Collect and sanitize inputs
@@ -134,6 +130,13 @@ echo "\n";
     // Check if both fields are provided
 
     if(!empty($name) && !empty($email)) {
+
+          // Add Email Validation
+          if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "Invalid email format!";
+            exit; // Stop further processing if email is invalid
+        }
+        // If everything is fine, show data
         echo "Name: " . $name . "<br>";
         echo "Email: " . $email . "<br>";
     } else {
@@ -145,6 +148,111 @@ echo "\n";
 }
 
 
+    echo "\n";
+    echo "\n";
+
+
+function greet($name = "Guest") {
+    return "Hello, $name!";
+ }   
+
+echo greet();
+echo "\n";
+echo greet("Alice");
+
+echo "\n";
+echo "\n";
+
+
+// Check how many characters are in this string:
+
+$text = "Hello, PHP!";
+
+$length = strlen($text);
+echo "The string contains $length characters.";
+
+
+echo "\n";
+echo "\n";
+
+// Write a while loop to print numbers from 5 to 1.
+
+$number = 5;
+
+while ($number >= 1) {
+    echo $number . "\n";
+    $number--; 
+}
+
+// Explode and Implode
+
+$fruits = "apple, banana, cherry";
+
+$fruitsArray = explode(",", $fruits);
+$fruitsString = implode("|", $fruitsArray);
+print_r($fruitsArray);
+echo "\n";
+echo $fruitsString;
+
+
+echo "\n";
+echo "\n";
+
+// Write a function isEven() that returns true if a number is even, false if not.
+
+
+function isEven($number) {
+    return $number % 2 === 0;
+}
+
+var_dump(isEven(4)); // True;
+var_dump(isEven(7)); // False;
+
+echo "\n";
+echo "\n";
+
+function isEven1($number1) {
+    if ($number1 % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var_dump(isEven1(8)); // True;
+var_dump(isEven1(9)); // False;
 
 
 
+echo "\n";
+echo "\n";
+
+
+echo date ('l, F j, Y');
+
+/**
+ * Explanation:
+l = Full day name (e.g., Tuesday)
+F = Full month name (e.g., February)
+j = Day of the month without leading zeros (e.g., 27)
+Y = Full year (e.g., 2025)
+**/
+
+
+echo "\n";
+echo "\n";
+
+
+$sentence = "php is amazing!";
+$sentence = ucfirst($sentence);
+echo $sentence;
+
+
+echo "\n";
+echo "\n";
+
+// Calculate and print the sum of all numbers.
+
+$numbers = [10, 20, 30, 40];
+
+$sum = array_sum($numbers);
+echo $sum;
