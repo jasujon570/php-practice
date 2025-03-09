@@ -254,5 +254,154 @@ echo "\n";
 
 $numbers = [10, 20, 30, 40];
 
+echo "\n";
+echo "\n";
+
+
 $sum = array_sum($numbers);
 echo $sum;
+
+
+echo "\n";
+echo "\n";
+
+// String Manipulation
+
+echo strtoupper("hello world");
+
+echo "\n";
+echo "\n";
+
+$str = "hello world";
+$newStr = str_replace("world", "PHP", $str);
+
+echo $newStr;
+
+echo "\n";
+echo "\n";
+
+$anArray = ['PHP', 'C', 'C++'];
+
+array_push($anArray, 'Javascript');
+
+print_r($anArray);
+
+
+// Alternative
+
+$languages = ["PHP", "Python", "Javascript"];
+
+$languages[] = "Java";
+
+print_r($languages);
+
+// Write a for loop that prints numbers from 10 to 1 in reverse order.
+
+
+
+for($i= 10; $i >= 1; $i--){
+    echo $i. "\n";
+}
+
+echo "\n";
+echo "\n";
+
+// Use a while loop to print even numbers from 2 to 10.
+
+$num = 2;
+
+while($num <= 10){
+    echo $num. "\n";
+    $num += 2;
+}
+
+echo "\n";
+echo "\n";
+
+// Alternative
+
+$numbers = 1;
+
+while ($numbers <= 10){
+    if ($numbers % 2 == 0){
+        echo $numbers. "\n";
+    }
+    $numbers++;
+}
+
+echo "\n";
+echo "\n";
+
+// Write a function that multiplies two numbers and returns the result.
+
+function multiply($a, $b){
+    return $a * $b;
+}
+
+$result = multiply(5, 6);
+echo "The result is: " . $result;
+
+echo "\n";
+echo "\n";
+
+// Create a function that takes a number as input and returns "Even" if it’s even, otherwise "Odd".
+
+function isEvenNumber($n){
+    if($n % 2 == 0){
+        return "The number is Even";
+    }else {
+        return "The number is Odd";
+    }
+}
+
+$n = 11;
+echo isEvenNumber($n);
+
+echo "\n";
+echo "\n";
+
+// Alternative
+
+function evenNumber($n){
+    return ($n % 2 == 0) ? "The nunbner is Even" : "The number is Odd";
+
+}
+
+echo evenNumber(15);
+
+echo "\n";
+echo "\n";
+
+
+// Create an associative array representing a car with keys: "brand", "model", and "year".
+
+
+$cars = [
+    "brand" => "Toyota",
+    "model" => "Corolla",
+    "year" => 2025
+];
+
+print_r($cars);
+
+echo "\n";
+
+// Print only the "model" value.
+
+echo $cars["model"];
+
+echo "\n";
+echo "\n";
+
+// Generate a random number between 1 and 100
+
+$randomNumbers = rand(1, 100);
+echo $randomNumbers;
+
+echo "\n";
+
+// Round the number 4.7 to the nearest integer.
+
+$roundNumber = round(4.7);
+
+echo $roundNumber;
