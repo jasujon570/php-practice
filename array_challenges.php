@@ -109,6 +109,75 @@
     $arrayReverse = array_reverse($arrayString);
     print_r($arrayReverse);
 
+    echo "\n";
+    echo "\n";
+
+    // Find the smallest number in an array: Find the smallest number in the array [10, 5, 100, 2, 70]
+
+    $inNumberArray = [10, 5, 100, 2, 70];
+
+    $findTheSmallestNumber = min($inNumberArray);
+    print_r($findTheSmallestNumber);
+
+    echo "\n";
+    echo "\n";
+
+    // Combine two arrays into an associative array: Combine the arrays ['name', 'age', 'city'] and ['Alice', 25, 'New York'] into an associative array where the first array provides the keys and the second one provides the values.
+
+    $firstArray = ['name', 'age', 'city'];
+    $secondArray = ['Alice', 25, 'New York'];
+
+    $combineArray = array_combine($firstArray, $secondArray);
+
+    print_r($combineArray);
+    
+
+    echo "\n";
+    echo "\n";
+
+    // Check if an array is empty: Check if the array [] is empty. If it is, print "Array is empty".
+
+    $emptyArray = [];
+
+    if(empty($emptyArray)) {
+        echo "Array is empty";
+    } else {
+        echo "Array is not empty";
+    }
+
+    echo "\n";
+    echo "\n";
+
+
+    // Remove duplicate values from an array: Given the array [1, 2, 2, 3, 4, 5, 5], remove the duplicates and print the new array.
+
+    $dupliArray = [1, 2, 2, 3, 4, 5, 5];
+    $newArray = array_unique($dupliArray);
+    print_r($newArray);
+
+    echo "\n";
+    echo "\n";
+
+    // Find the average of the elements in an array: Calculate the average of the numbers in the array [10, 20, 30, 40, 50].
+
+    $givenArray = [10, 20, 30, 40, 50];
+    $averageArray = array_sum($givenArray) / count($givenArray);
+    echo "The average is: " . $averageArray;
+
+    echo "\n";
+    echo "\n";
+
+    // Filter even numbers from an array: From the array [1, 2, 3, 4, 5, 6], create a new array that contains only even numbers.
+
+    $myArray = [1, 2, 3, 4, 5, 6];
+
+    $evenNumbers = array_filter($myArray, function($num) {
+        return $num % 2 == 0;
+    });
+    
+    print_r($evenNumbers);
+
+
 
 
 
